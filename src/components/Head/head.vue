@@ -1,6 +1,14 @@
 <template>
   <div id="head">
-        <div class="header clearfix">    
+        <div class="jXkdP2Qa">
+          <div class="_24MmDY0f">
+            <div class="_1G_ORm8K">
+              <span class="_1ppIkQ1o"></span>
+              <span>华为软手机壳</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="header clearfix">    
             <a href="https://m.imooc.com" class="logo"><img src="https://m.imooc.com/static/wap/static/common/img/logo2.png"></a> 
             <div id="wap_global_banner" class="adver-con"></div>
             <a href="https://www.imooc.com/m/web/user/usercenter.html" class="header-avator r js-header-avator"><img src="//img4.mukewang.com/57cc10f70001d20901000100-370-370.jpg"></a>
@@ -16,7 +24,7 @@
                 </div>
                 <a href="javascript:void(0);" class="r cancel js-cancel">取消</a>
             </form>
-        </div>
+        </div> -->
   </div>
 </template>
 <script>
@@ -26,7 +34,41 @@ export default {
   }
 }
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
+
+.jXkdP2Qa 
+    width: 3.75rem;
+    overflow: hidden;
+    position: relative;
+    padding: .06rem .14rem;
+    background-color: #fff;
+    background-size: 100% .5rem;
+    background-repeat: no-repeat;
+    ._24MmDY0f 
+      text-align: center;
+      border-radius: .08rem;
+      background-color: #ededed;
+      height: .38rem;
+      color: #9c9c9c;
+      font-size: .16rem;
+      ._1G_ORm8K 
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        height: .38rem;
+        overflow: hidden;
+        position: relative;
+        ._1ppIkQ1o
+          margin-right: .07rem;
+          -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+/*
 .header
     width: 100%;
     height: 1.49333333rem;
@@ -75,25 +117,5 @@ export default {
         font-size: .37333333rem;
         color: #F01414;
         text-align: center;
-    .download-login 
-        display: block;
-        float: right;
-        margin-top: .21333333rem;
-        margin-right: .37333333rem;
-        width: 3.44rem;
-        height: .85333333rem;
-        line-height: .85333333rem;
-        background: rgba(242,13,13,.06);
-        border-radius: .42666667rem
-        .download-login a 
-            float: left;
-            font-weight: 700;
-            font-size: .32rem;
-            color: #F01414;
-            text-align: center
-            .download-btn 
-                width: 2.02666667rem
-            .login-btn
-                width: 1.38666667rem
-
+*/
 </style>
