@@ -1,5 +1,6 @@
 <template>
   <div id="head">
+        <div>{{Name}}</div>
         <div class="jXkdP2Qa">
           <div class="_24MmDY0f">
             <div class="_1G_ORm8K">
@@ -61,6 +62,11 @@
 <script>
 export default {
   name:'Head',
+  data(){
+    return {
+      Name : this.$store.state.hihiName
+    }
+  },
   components: {
   }
 }
