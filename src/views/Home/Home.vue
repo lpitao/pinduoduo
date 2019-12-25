@@ -2,7 +2,7 @@
   <div class="home">
   <banner></banner>
   <navv></navv>
-  <list></list>
+  <list ></list>
   </div>
 </template>
 
@@ -17,6 +17,8 @@ export default {
     Banner,
     Navv,
     List
+  },
+  methods:{
   }
 }
 </script>

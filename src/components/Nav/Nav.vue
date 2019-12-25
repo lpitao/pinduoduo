@@ -68,7 +68,7 @@
 </template>
 <script>
 export default {
-  name:'nav',
+  name:'navHi',
   components: {
   }
 }

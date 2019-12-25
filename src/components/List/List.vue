@@ -1,6 +1,6 @@
 <template>
   <div id="list">
-    <div class="_3nYKROkD _2-3_LZI6" data-uniqid="11" style="overflow: hidden;">
+    <div class="_3nYKROkD _2-3_LZI6" @click.prevent="goView">
         <div class="ebilH5jP">
               <div class="bqyzKuVp _2mlYBANP">
                     <img src="//t00img.yangkeduo.com/goods/images/2019-11-12/8945fb86-fcbc-438c-a6a7-0a6759fc71e7.jpg?imageMogr2/sharpen/1%7CimageView2/2/w/312/q/70/format/webp" style="background-color: rgb(255, 255, 255);">
@@ -24,6 +24,13 @@
 <script>
 export default {
   name:'list',
+  methods:{
+    goView: function(){
+      this.$router.push({
+        path:'/detail'
+      })
+    }
+  }
 }
 </script>
 <style lang="stylus">
