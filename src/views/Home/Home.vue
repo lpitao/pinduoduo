@@ -2,11 +2,11 @@
   <div class="home">
   <banner></banner>
   <navv></navv>
-  <list ></list>
+  <list :list="city"></list>
    <div id="product-list-two">
         <h2>Product List Two</h2>
         <ul>
-          <li v-for="product in products">
+          <li v-for="product in products" :key="product">
             <span class="name">{{ product.name }}</span>
             <span class="price">${{ product.price }}</span>
           </li>
@@ -26,7 +26,8 @@ export default {
   name: 'home',
   data () {
       return {
-          products: this.$store.state.products
+          products: this.$store.state.products,
+          city: [1,2,3]
       }
   },
   components: {

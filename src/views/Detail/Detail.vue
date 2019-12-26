@@ -1,15 +1,17 @@
 <template>
   <div id="Detail">
-    <div id="banner" class="goods-banner" >
+    <head-detail></head-detail>
+    <div id="banner" class="goods-banner" @click="handleBannerClick">
         <ul class="islider-outer">
             <li class="islider-html islider-next" >
-                <img src="//t00img.yangkeduo.com/goods/images/images/2019-09-19/43f7627a-63a2-4c7f-93c9-d587e2f6001b.jpg"  data-url="">
+                <img src="//t00img.yangkeduo.com/goods/images/images/2019-09-19/43f7627a-63a2-4c7f-93c9-d587e2f6001b.jpg">
             </li>
             <li class="islider-html islider-prev">
-                <img src="//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg" data-url="">
+                <img src="//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg">
             </li>
         </ul>
     </div>
+    <common-gallary :imgs = "gallaryImgs" v-show = "showGallary" @close="handleGallaryClose"></common-gallary>
     <div class="_1Hli43py">
       <div class="_2NgeZQAr _2h5rjz7_">
         259人在拼单，可直接参与
@@ -35,17 +37,39 @@
   </div>
 </template>
 <script>
-import tabDetail from './tabDetail/tabDetail.vue'
+import tabDetail from './components/tabDetail.vue'
+import headDetail from './components/Header.vue'
+import CommonGallary from '@/common/gallary/Gallary.vue'
 export default {
   name:'Detail',
+  data () {
+    return {
+      showGallary: false,
+      gallaryImgs:[
+          "//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg",
+          "//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg"
+          ],
+    }
+  },
+  methods: {
+      handleBannerClick () {
+          this.showGallary = true
+      },
+      handleGallaryClose() {
+          this.showGallary = false
+      }
+  },
   components: {
-    tabDetail
+    tabDetail,
+    CommonGallary,
+    headDetail
   }
 }
 </script>
 <style lang="stylus" scoped>
 #banner
     position: relative;
+    height: 2rem
     .islider-outer
         list-style: none;
         margin: 0;

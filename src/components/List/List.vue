@@ -10,7 +10,7 @@
             <div class="troiqcp4">加绒保暖打底衫女t恤长袖大码女装韩版新款秋冬装内搭半高领上衣</div>
             <div class="_4gsz4_gs">
               <div class="W2aG482G AWeT5uvE">
-                <span class="WxGZqU5g">¥</span>9.4<span class="_2zosSFdU">已拼2.3万件</span>
+                <span class="WxGZqU5g">¥</span>{{list}}<span class="_2zosSFdU">已拼2.3万件</span>
               </div>
               <div class="GTexo12H _2-UUagyU" style="height: 0.22rem;">
                 <img class="_1dTVBpHV _1LS3KZFK" src="//t20img.yangkeduo.com/a/db60c8ac4a2c19deb482935953f0d51335743bc6-1568802479?imageMogr2/sharpen/1%7CimageView2/2/w/1300/q/70/format/webp">
@@ -24,6 +24,9 @@
 <script>
 export default {
   name:'list',
+  props: {
+    list: Array
+  },
   methods:{
     goView: function(){
       this.$router.push({
