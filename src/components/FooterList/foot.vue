@@ -1,7 +1,7 @@
 <template>
   <div class="foot">
       <router-link to="/">Home</router-link> |
-      <router-link to="/">my</router-link> |
+      <router-link to="/class">my</router-link> |
   </div>
 </template>
 <script>
