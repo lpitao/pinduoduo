@@ -1,0 +1,126 @@
+{
+    "ret":true,
+    "data": {
+        "hotCities" : [
+            {
+                "id": 1,
+                "spell": "beijing",
+                "name" : "北京"
+            },{
+                "id": 3,
+                "spell": "shanghai",
+                "name" : "上海"
+            },{
+                "id": 47,
+                "spell": "xian",
+                "name" : "西安"
+            },{
+                "id": 239,
+                "spell": "sanya",
+                "name" : "三亚"
+            }
+        ],
+        "cities": {
+            "A" : [{
+                "id": 56,
+                "spell" : "aba",
+                "name" : "阿贝"
+            },{
+                "id": 57,
+                "spell" : "akesu",
+                "name" : "阿克苏"
+            },{
+                "id": 58,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 59,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 60,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 61,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            }],
+            "B" : [{
+                "id": 56,
+                "spell" : "aba",
+                "name" : "阿贝"
+            },{
+                "id": 57,
+                "spell" : "akesu",
+                "name" : "阿克苏"
+            },{
+                "id": 58,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 59,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 60,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 61,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            }],
+            "C" : [{
+                "id": 56,
+                "spell" : "aba",
+                "name" : "阿贝"
+            },{
+                "id": 57,
+                "spell" : "akesu",
+                "name" : "阿克苏"
+            },{
+                "id": 58,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 59,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 60,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 61,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            }],
+            "D" : [{
+                "id": 56,
+                "spell" : "aba",
+                "name" : "阿贝"
+            },{
+                "id": 57,
+                "spell" : "akesu",
+                "name" : "阿克苏"
+            },{
+                "id": 58,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 59,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 60,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            },{
+                "id": 61,
+                "spell" : "alashanmeng",
+                "name" : "阿拉善盟"
+            }]
+        }
+    }
+}

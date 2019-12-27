@@ -11,35 +11,19 @@
             </li>
         </ul>
     </div>
-    <common-gallary :imgs = "gallaryImgs" v-show = "showGallary" @close="handleGallaryClose"></common-gallary>
-    <div class="_1Hli43py">
-      <div class="_2NgeZQAr _2h5rjz7_">
-        259人在拼单，可直接参与
-        <div class="qbmmEcZl">查看更多</div>
-      </div>
-      <div class="_1UR8mSBJ" id="loacl-group-container">
-        <div style="opacity: 1;">
-          <div class="_3ezufAwN">
-            <span class="_2kt39tM1" style="background-image: url(&quot;//t20img.yangkeduo.com/a/0965f051d01ab46e105dce0644584252ccd13490-1562823962?imageMogr2/thumbnail/100x&quot;);"></span>
-            <div class="_1dS9L-Qc">
-              <div class="_3iMjLshI">庄家三兄弟</div>
-              <div class="JUHkqUeN">
-                <div class="_3_Wrlz9f">还差<span class="NYTZ9d1H">1人</span>拼成</div>
-                <span class="_2B3lhJL5">剩余23:18:48.6</span>
-              </div>
-            </div>
-            <div class="_3scPuzOh o-EggeDs" data-active="before-red">去拼单</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <fade>
+       <common-gallary :imgs = "gallaryImgs" v-show = "showGallary" @close="handleGallaryClose"></common-gallary>
+    </fade>
     <tab-detail></tab-detail>
+    <list-detail :list="list"></list-detail>
   </div>
 </template>
 <script>
 import tabDetail from './components/tabDetail.vue'
 import headDetail from './components/Header.vue'
+import listDetail from './components/List.vue'
 import CommonGallary from '@/common/gallary/Gallary.vue'
+import Fade from '@/common/fade/Fade.vue'
 export default {
   name:'Detail',
   data () {
@@ -48,7 +32,29 @@ export default {
       gallaryImgs:[
           "//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg",
           "//t00img.yangkeduo.com/goods/images/2019-08-05/f41b8a68-8d7c-4f1d-acdc-ed54c8b12ce5.jpg"
-          ],
+      ],
+      list: [
+        {
+          title: 'hihihi周五',
+          children: [{
+            title: 'hihi吃寿司',
+            children:[{
+              title: '生啤'
+            }]
+          },{
+            title: 'hihi吃lele',
+            children:[{
+              title: 'coffe'
+            }] 
+          }]
+        },
+        {
+          title: 'hihihi周er',
+          children: {
+            title: 'hihi吃食堂'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -62,7 +68,9 @@ export default {
   components: {
     tabDetail,
     CommonGallary,
-    headDetail
+    headDetail,
+    listDetail,
+    Fade
   }
 }
 </script>

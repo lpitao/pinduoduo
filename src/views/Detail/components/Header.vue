@@ -6,7 +6,7 @@
             class="header-abs"
             v-show="showAbs"
         ></router-link>
-      <div class="header-fixed">
+      <div class="header-fixed" v-show="!showAbs">
           <router-link to="/"></router-link>
           景点
       </div>
@@ -22,23 +22,22 @@ export default {
   },
   methods: {
       showHead (){
+          console.log(document.documentElement.scrollTop)
           const top = document.documentElement.scrollTop
-          if(top > 60){
-              this.showAbs = false
-          } else {
+          if(top > 20){
               this.showAbs = true
+          } else {
+              this.showAbs = false
           }
       }
   },
-  activated() {
+  mounted() {
       window.addEventListener('scroll', this.showHead)
   }
 }
 </script>
 <style lang="stylus" scoped>
 .head
-    background : #000
-    opacity : .3
     .header-abs
         left: .2rem
         top: .2rem
@@ -46,4 +45,14 @@ export default {
         height: .8rem
         border-radius : .4rem
         background : blue
+        position absolute
+        boreder-radius: .4rem
+    .header-fixed
+        position :fixed
+        overflow hidden
+        width : 100%
+        background : #000
+        z-index:999
+        top: 0
+        left: 0
 </style>
