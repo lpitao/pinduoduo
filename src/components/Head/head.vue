@@ -54,7 +54,8 @@ export default {
   data(){
     return {
       keyword: '',
-      timer: null
+      timer: null,
+      list:
     }
   },
   props: {
@@ -121,6 +122,9 @@ export default {
               margin-right: .07rem;
               -webkit-transform: translateY(-1px);
               transform: translateY(-1px);
+          .search-content
+            overflow :hidden
+            position:absolute
     .nav-bar-container
         position: relative;
         max-width: 768px;
